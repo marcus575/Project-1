@@ -551,13 +551,13 @@ def main():
                     game_state = 'town'
                     
             # Handle non-movement actions
-            elif choice == 'm':
+            elif choice == 'm': # Map
                 draw_map(game_map, fog, player)
-            elif choice == 'i':
+            elif choice == 'i': # Information
                 player['current_position'] = True
                 show_information(player)
                 del player['current_position']
-            elif choice == 'p':
+            elif choice == 'p': # Portal
                 print("------------------------------------------------------")
                 print("You place your portal stone here and zap back to town.")
 
